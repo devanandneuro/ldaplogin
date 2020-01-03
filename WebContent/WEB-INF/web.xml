@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>ResolutionDashboard</display-name>
+  <servlet>
+    <description>
+		</description>
+    <display-name>CircuitRemovalServlet</display-name>
+    <servlet-name>CircuitRemovalServlet</servlet-name>
+    <servlet-class>servlet.CircuitRemovalServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>
+		</description>
+    <display-name>Signout</display-name>
+    <servlet-name>Signout</servlet-name>
+    <servlet-class>com.healer.servlet.Signout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Signout</servlet-name>
+    <url-pattern>/Signout</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>HealerLogin.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
